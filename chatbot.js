@@ -11,8 +11,9 @@ const chatbot = {
         "what is luminara": ["Luminara is a fictional language created by LRV Sai Kausthubh, inspired by space and astronomy.", "Luminara is an invented language that reflects its creator's love for the cosmos."],
         "why was luminara created": ["Luminara was created by LRV Sai Kausthubh as an expression of his love for space and astronomy.", "The purpose behind Luminara's creation was to blend language with the beauty of the cosmos."],
         "tell me about luminara": ["Luminara is a fascinating language created by LRV Sai Kausthubh. It's deeply influenced by concepts from space and astronomy. What specific aspect would you like to know more about?"],
-        "default": ["That's an interesting question about Luminara! Could you be more specific?", "Luminara has many fascinating aspects. What particular area are you curious about?", "As a language inspired by space and astronomy, Luminara has a lot to explore. What would you like to know more about?"],
-        "tell me about eldoria": ["Eldoria is the 1st planet in the luminara star system"]
+        "tell me about eldoria": ["Eldoria is the 1st planet in the luminara star system"],
+        "default": ["That's an interesting question about Luminara! Could you be more specific?", "Luminara has many fascinating aspects. What particular area are you curious about?", "As a language inspired by space and astronomy, Luminara has a lot to explore. What would you like to know more about?"]
+        
     },
 
     getResponse(input) {
