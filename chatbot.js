@@ -42,4 +42,25 @@ const chatbot = {
     }
 };
 
-// The rest of your code (handleUserInput function, event listeners) remains the same
+// Function to handle user input and display responses
+function handleUserInput() {
+    const userInput = document.getElementById("user-input").value;
+    const response = chatbot.getResponse(userInput);
+    
+    const chatBox = document.getElementById("chat-box");
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+    chatBox.innerHTML += `<p><strong>ChatBot:</strong> ${response}</p>`;
+    
+    document.getElementById("user-input").value = "";
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Add event listener for the send button
+document.getElementById("send-button").addEventListener("click", handleUserInput);
+
+// Add event listener for the Enter key
+document.getElementById("user-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        handleUserInput();
+    }
+});
